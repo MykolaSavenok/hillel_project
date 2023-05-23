@@ -1,8 +1,8 @@
-const theName = prompt('What is your name?');
-if (theName == 'John') {
-   alert('Hello, John! How are you?');
-   console.log('This is John');
-} else if (theName == '') {
+const userName = prompt('What is your name?', '');
+if (userName === '' || userName === null) {
    alert('Hello, noname! How are you?');
-   console.log('This is no name');
+   console.log('This is noname!');
+} else if (userName === userName) {
+   alert(`Hello, ${userName}! How are you?`);
+   console.log(`This is ${userName}`);
 }
